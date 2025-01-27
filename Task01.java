@@ -1,62 +1,73 @@
 public class Task01 {
         public static void main(String[] args) {
             // Задача 1
+            System.out.print("1. ");
             printThreeWords();
 
             // Задача 2
+            System.out.print("\n"+"2. ");
             checkSumSign();
 
             // Задача 3
+            System.out.print("\n"+"3. ");
             printColor();
 
             // Задача 4
+            System.out.print("\n"+"4. ");
             compareNumbers();
 
             // Задача 5
+            System.out.print("\n"+"5. ");
             System.out.println(isSumInRange(7, 8));  // Пример вызова
 
             // Задача 6
+            System.out.print("\n"+"6. ");
             checkPositiveNegative(5);  // Пример вызова
 
             // Задача 7
-            System.out.println(isNegative(5));  // Пример вызова
+            System.out.print("\n"+"7. ");
+            System.out.println(isNegative(-5));  // Пример вызова
 
             // Задача 8
+            System.out.print("\n"+"8. ");
             printStringMultipleTimes("Hello", 3);
 
             // Задача 9
+            System.out.print("\n"+"9. ");
             System.out.println(isLeapYear(2024));  // Пример вызова
 
             // Задача 10
+            System.out.print("\n"+"10. ");
             int[] arr = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
             flipArray(arr);
 
             // Задача 11
+            System.out.print("\n"+"11. ");
             int[] filledArray = fillArray(100);
 
             // Задача 12
+            System.out.print("\n"+"12. ");
             int[] arrToMultiply = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
             multiplyLessThanSix(arrToMultiply);
 
             // Задача 13
+            System.out.print("\n"+"13. ");
             int[][] squareMatrix = createSquareMatrix(5);  // Пример для 5x5
             fillDiagonalWithOnes(squareMatrix);
 
             // Задача 14
+            System.out.print("\n"+"14. ");
             int[] newArray = createArray(5, 10);  // Пример длина 5 и начальное значение 10
         }
 
         // 1. Метод для вывода трех слов
         public static void printThreeWords() {
-            System.out.println("Orange");
-            System.out.println("Banana");
-            System.out.println("Apple");
+            System.out.println("Orange\n   Banana\n   Apple");
         }
 
         // 2. Метод для проверки суммы двух чисел
         public static void checkSumSign() {
-            int a = 5;
-            int b = -3;
+            int a = 5, b = -3;
             int sum = a + b;
             if (sum >= 0) {
                 System.out.println("Сумма положительная");
@@ -70,9 +81,9 @@ public class Task01 {
             int value = 120;
             if (value <= 0) {
                 System.out.println("Красный");
-            } else if (value <= 100) {
+            } else if (value > 0 && value <= 100) {
                 System.out.println("Желтый");
-            } else {
+            } else if (value > 100){
                 System.out.println("Зеленый");
             }
         }
@@ -184,3 +195,5 @@ public class Task01 {
             return array;
         }
 }
+
+// Во многих задачах нет условия вывода в консоль. Добавил для удобства проверки.
