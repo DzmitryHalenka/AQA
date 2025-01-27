@@ -1,5 +1,4 @@
-public class Tasck01 {
-
+public class Task01 {
         public static void main(String[] args) {
             // Задача 1
             printThreeWords();
@@ -49,9 +48,9 @@ public class Tasck01 {
 
         // 1. Метод для вывода трех слов
         public static void printThreeWords() {
-            System.out.println("0range");
+            System.out.println("Orange");
             System.out.println("Banana");
-            System.out.println("Аррlе");
+            System.out.println("Apple");
         }
 
         // 2. Метод для проверки суммы двух чисел
@@ -184,5 +183,4 @@ public class Tasck01 {
             System.out.println();
             return array;
         }
-
 }
