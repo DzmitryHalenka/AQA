@@ -71,7 +71,7 @@ public class Task0501 {
         students.removeIf(student -> !student.isPromoted());
     }
 
-    // Метод для перевода студентов на следующий курс
+    // Метод для перевода на следующий курс
     public static void promoteStudents(List<Student> students) {
         for (Student student : students) {
             if (student.isPromoted()) {
